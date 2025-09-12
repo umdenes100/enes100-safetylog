@@ -1,3 +1,5 @@
+// example functions copy and pasted from enes100-toolcheck main.js
+
 export function setPage(page) {
     hide('home')
     hide('overview')

@@ -1,3 +1,5 @@
+// needs to be updated when firebase is working again
+
 // Import the functions you need from the SDKs you need
 
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-app.js";
@@ -12,7 +14,7 @@ import { getDatabase } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-d
 
 const firebaseConfig = {
 
-  apiKey: "AIzaSyBAMDAGYHNMtPaXAwJl-BRvxvl37E7Z3xE",
+  apiKey: "AIzaSyBAMDAGYHNMtPaXAwJl-BRvxvl37E7Z3xE", 
   authDomain: "engr-enes100tool-inv-firebase.firebaseapp.com",
   databaseURL: "https://engr-enes100tool-inv-firebase-velma.firebaseio.com",
   projectId: "engr-enes100tool-inv-firebase",
