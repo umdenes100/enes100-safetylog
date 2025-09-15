@@ -10,18 +10,160 @@
     <link rel="stylesheet" href="/style.css">
 </head>
 
+<body>
+    <div class = "tab">
+        <button class = "tablinks" onclick = "openCat(event, 'PPE')">PPE Correction</button>
+        <button class = "tablinks" onclick = "openCat(event, 'Tools')">Tool Correction</button>
+        <button class = "tablinks" onclick = "openCat(event, 'Machines')">Machine Correction</button>
+        <button class = "tablinks" onclick = "openCat(event, 'Electronics')">Electronics Correction</button>
+        <button class = "tablinks" onclick = "openCat(event, 'Accident')">Accident</button>
+    </div>
+    
+    <div id="PPE" class = "tabcontent">
+        <h3>PPE</h3>
+        <p>TF needed to remind student of PPE safety rules</p>
+    </div>
+
+    <div id="Tools" class = "tabcontent">
+        <h3>Tools</h3>
+        <p>TF needed to remind student of tool safety rules</p>
+    </div>
+
+    <div id="Machines" class = "tabcontent">
+        <h3>Machines</h3>
+        <p>TF needed to remind student of machine safety rules</p>
+    </div>
+
+    <div id="Electronics" class = "tabcontent">
+        <h3>Electronics</h3>
+        <p>TF needed to remind student of electronics safety rules</p>
+    </div>
+
+    <dive id="Accident" class = "tabcontent">
+        <h3>Accident</h3>
+        <p>TF witnessed incident involving damage to student and/or lab</p>
+    </div>
+</body>
+
+<style>
+    .tabcontent {
+        display: none;
+        padding: 6px 12px;
+        border: 1px solid #ccc;
+        border-top: none;
+    }
+
+    @font-face {
+        font-family: 'Interstate';
+        font-weight: normal;
+        font-style: normal;
+        /*noinspection CssUnknownTarget*/
+        src: local('Interstate'), url("/Interstate-Regular.otf") format('opentype');
+    }
+
+    @font-face {
+        font-family: 'Interstate';
+        font-style: normal;
+        font-weight: bold;
+        /*noinspection CssUnknownTarget*/
+        src: local('Interstate'), url("/Interstate-Bold.otf") format('opentype');
+    }
+
+    body {
+        padding: 0;
+        margin: 0;
+        background-image: url("/img/shell overlay repeating.svg");
+        background-repeat: repeat;
+        /* min-height: 96vh; */
+        height: 96vh;
+        background-size: 50%;
+        background-color: #121B21;
+        color: white;
+        font-family: 'Interstate', monospace;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+        border-top: 2vh solid rgba(255, 210, 0, 1.00);
+        border-bottom: 2vh solid rgba(255, 210, 0, 1.00);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: max-content;
+    }
+
+    .page {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 0 2vw;
+        width: 100%;
+        overflow: hidden;
+        align-items: center;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 80px;
+        margin: 0px;
+        margin-bottom: 1%;
+    }
+
+    .tab button {
+        cursor: pointer;
+        padding: 0.5rem 1rem;
+        border: 1px solid transparent;
+        margin-bottom: -1px;
+        background-color: #fff;
+        border-bottom-color: #abc;
+        font: inherit;
+        font-size: smaller;
+        color: black;
+    }
+    .tab button.active {
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
+        border-top-width: 8px;
+        border-color: #e21833 #abc #fff;
+    }
+</style>
+
+<script>
+    function openCat(evt, catName) {
+        var i, tabcontent, tablinks;
+
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        document.getElementById(catName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+</script>
+
 <!-- Tab example source: https://www.w3schools.com/howto/howto_js_tabs.asp -->
 
-<body>
+<!-- <body> -->
     <!-- Tab links -->
-    <div class="tab">
+    <!-- <div class="tab">
         <button class="tablinks" onclick="openCity(event, 'London')">London</button>
         <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
         <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
-    </div>
+    </div> -->
 
     <!-- Tab content -->
-    <div id="London" class="tabcontent">
+    <!-- <div id="London" class="tabcontent">
         <h3>London</h3>
         <p>London is the capital city of England.</p>
     </div>
@@ -35,9 +177,9 @@
         <h3>Tokyo</h3>
         <p>Tokyo is the capital of Japan.</p>
     </div>
-</body>
+</body> -->
 
-<style>
+<!-- <style>
     /* Style the tab */
     .tab {
         overflow: hidden;
@@ -73,12 +215,11 @@
         border: 1px solid #ccc;
         border-top: none;
     }
-</style>
-
+</style> -->
 
 <!-- NOTE from camille: these functions (specifically the second one) do not allow for nested tabs, so 
     if your finished design has nested tabs you will have to adjust for that. -->
-<script>
+<!-- <script>
     function openCity(evt, cityName) {
         // Declare all variables
         var i, tabcontent, tablinks;
@@ -99,6 +240,6 @@
         document.getElementById(cityName).style.display = "block";
         evt.currentTarget.className += " active";
     } 
-</script>
+</script> -->
 
 </html>

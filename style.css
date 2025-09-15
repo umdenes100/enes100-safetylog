@@ -17,134 +17,70 @@
 }
 
 body {
-    font-family: "Interstate", sans-serif;
-    background-color: #121B21;
-    color: white;
-    /* display: flex; */
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100vw;
     padding: 0;
     margin: 0;
-}
-
-select,
-button {
-    font-size: 16px;
+    background-image: url("/img/shell overlay repeating.svg");
+    background-repeat: repeat;
+    /* min-height: 96vh; */
+    height: 96vh;
+    background-size: 50%;
+    background-color: #121B21;
     color: white;
-    border: 1px solid #666;
-    border-radius: 4px;
-    padding: 4px;
-    height: 30px;
-}
-
-:root {
-    touch-action: pan-x pan-y;
-    color-scheme: dark;
-    text-rendering: optimizeLegibility;
-}
-
-#home {
-    text-align: center;
+    font-family: 'Interstate', monospace;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    border-top: 2vh solid rgba(255, 210, 0, 1.00);
+    border-bottom: 2vh solid rgba(255, 210, 0, 1.00);
+    display: flex;
     flex-direction: column;
-    margin-bottom: 10vh;
+    justify-content: center;
+    max-width: max-content;
 }
 
-#overview,
-#pcs,
-#sw,
-#gs,
-#mt,
-#clamps,
-#hms,
-#et,
-#st,
-#ct,
-#ppe {
+.page {
+    align-items: center;
     display: flex;
-    width: 95vw;
-    height: 100dvh;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 2vw;
+    width: 100%;
     overflow: hidden;
+    align-items: center;
 }
 
-svg {
-    border: .5vh solid white;
-    width: 95vw;
+h1 {
+    text-align: center;
+    font-size: 80px;
+    margin: 0px;
+    margin-bottom: 1%;
 }
 
-.buttonBox {
-    display: flex;
+button {
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border: 1px solid transparent;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border-bottom-color: #abc;
+    font: inherit;
+    font-size: smaller;
+    color: black;
 }
-
-.buttonBoxHome {
-    display: flex;
-    flex-direction: row;
-    height: fit-content;
+button.selected {
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-width: 8px;
+    border-color: #e21833 #abc #fff;
 }
-
-.buttonBoxHome button {
-    margin: 0 8px;
-}
-
-@media (max-width: 750px) {
-
-    /* collapsed menu */
-    #overview,
-    #pcs,
-    #sw,
-    #gs,
-    #mt,
-    #clamps,
-    #hms,
-    #et,
-    #st,
-    #ct,
-    #ppe {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    button {
-        margin: 0px 8px 8px 0px;
-    }
-
-    .buttonBox {
-        flex-direction: row;
-    }
-}
-
-@media (min-width: 750px) {
-
-    /* open menu */
-    #overview,
-    #pcs,
-    #sw,
-    #gs,
-    #mt,
-    #clamps,
-    #hms,
-    #et,
-    #st,
-    #ct,
-    #ppe {
-        flex-direction: row;
-        align-items: center;
-    }
-
-    button {
-        margin: 4px 8px 4px 0px;
-    }
-
-    .buttonBox {
-        flex-direction: column;
-        width: 86px;
-    }
-}
-
-@media (min-width:700px) and (orientation:landscape) {
-    svg {
-        height: 95dvh;
-        width: fit-content;
-    }
+.text {
+    font-size: 1rem;
+    padding: 2rem;
+    display: block;
+    width: 90%;
 }
