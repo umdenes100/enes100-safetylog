@@ -4,24 +4,21 @@
     font-family: 'Interstate';
     font-weight: normal;
     font-style: normal;
-    /*noinspection CssUnknownTarget*/
-    src: local('Interstate'), url("/Interstate-Regular.otf") format('opentype');
+    src: local('Interstate'), url("/enes100-safetylog/public/Interstate-Regular.otf") format('opentype');
 }
 
 @font-face {
     font-family: 'Interstate';
+    font-weight: normal;
     font-style: normal;
-    font-weight: bold;
-    /*noinspection CssUnknownTarget*/
-    src: local('Interstate'), url("/Interstate-Bold.otf") format('opentype');
+    src: local('Interstate'), url("/enes100-safetylog/public/Interstate-Regular.otf") format('opentype');
 }
 
 body {
     padding: 0;
     margin: 0;
-    background-image: url("/img/shell overlay repeating.svg");
+    background-image: url("/enes100-safetylog/public/img/shell overlay repeating.svg");
     background-repeat: repeat;
-    /* min-height: 96vh; */
     height: 96vh;
     background-size: 50%;
     background-color: #121B21;
@@ -34,14 +31,38 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: max-content;
 }
 
-.page {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    margin: auto;
+.tab button {
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border: 1px solid transparent;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border-bottom-color: #abc;
+    font: inherit;
+    font-size: smaller;
+    color: black;
+}
+
+.tab button.active {
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-width: 8px;
+    border-color: #e21833 #abc #fff;
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+}
+
+h1 {
+    text-align: center;
+    font-size: 80px;
+    margin: 0px;
+    margin-bottom: 1%;
 }
 
 .text {
@@ -54,33 +75,9 @@ body {
     align-items: center;
 }
 
-h1 {
-    text-align: center;
-    font-size: 80px;
-    margin: 0px;
-    margin-bottom: 1%;
-}
-
-button {
-    cursor: pointer;
-    padding: 0.5rem 1rem;
-    border: 1px solid transparent;
-    margin-bottom: -1px;
-    background-color: #fff;
-    border-bottom-color: #abc;
-    font: inherit;
-    font-size: smaller;
-    color: black;
-}
-button.selected {
-    border-top-right-radius: 8px;
-    border-top-left-radius: 8px;
-    border-top-width: 8px;
-    border-color: #e21833 #abc #fff;
-}
-.text {
-    font-size: 1rem;
-    padding: 2rem;
-    display: block;
-    width: 90%;
+.page {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
 }
