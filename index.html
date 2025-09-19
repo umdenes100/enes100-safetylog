@@ -21,27 +21,76 @@
     
     <div id="PPE" class = "tabcontent">
         <h3>PPE</h3>
-        <p>TF needed to remind student of PPE safety rules</p>
+        <!-- NEED TO ADD WHERE INPUT IS BEING STORED -->
+        <!-- <form action="/action_page.php"></form> -->
+        <form ppe = "">
+            <input type = "button" class = "tab-button" id = "glasses" value = "Safety Glasses">
+            <input type = "button" class = "tab-button" id = "attire" value = "Attire">
+            <input type = "button" class = "tab-button" id = "ppeOther" value = "Other"><br><br>
+            <label for = "ppeNote">Notes:</label><br>
+            <input type = "text" class = "note-input" id = "ppeNote" name = "ppeNote"><br><br>
+            <input type = "submit" value = "Submit">
+        </form>
     </div>
 
     <div id="Tools" class = "tabcontent">
         <h3>Tools</h3>
-        <p>TF needed to remind student of tool safety rules</p>
+        <!-- NEED TO ADD WHERE INPUT IS BEING STORED -->
+        <!-- <form action="/action_page.php"></form> -->
+        <form tool = "">
+            <input type = "button" class = "tab-button" id = "handTool" value = "Hand Tools">
+            <input type = "button" class = "tab-button" id = "powerTool" value = "Power Tools">
+            <input type = "button" class = "tab-button" id = "solder" value = "Soldering">
+            <input type = "button" class = "tab-button" id = "heatGun" value = "Heat Gun">
+            <input type = "button" class = "tab-button" id = "toolOther" value = "Other"><br><br>
+            <label for = "toolNote">Notes:</label><br>
+            <input type = "text" class = "note-input" id = "toolNote" name = "toolNote"><br><br>
+            <input type = "submit" value = "Submit">
+        </form>
     </div>
 
     <div id="Machines" class = "tabcontent">
         <h3>Machines</h3>
-        <p>TF needed to remind student of machine safety rules</p>
+        <!-- NEED TO ADD WHERE INPUT IS BEING STORED -->
+        <!-- <form action="/action_page.php"></form> -->
+        <form electronics = "">
+            <input type = "button" class = "tab-button" id = "print3D" value = "3D Printers">
+            <input type = "button" class = "tab-button" id = "laserCut" value = "Laser Cutters">
+            <input type = "button" class = "tab-button" id = "machineOther" value = "Other"><br><br>
+            <label for = "machineNote">Notes:</label><br>
+            <input type = "text" class = "note-input" id = "machineNote" name = "machineNote"><br><br>
+            <input type = "submit" value = "Submit">
+        </form>
     </div>
 
     <div id="Electronics" class = "tabcontent">
         <h3>Electronics</h3>
-        <p>TF needed to remind student of electronics safety rules</p>
+        <!-- NEED TO ADD WHERE INPUT IS BEING STORED -->
+        <!-- <form action="/action_page.php"></form> -->
+        <form machine = "">
+            <input type = "button" class = "tab-button" id = "arduino" value = "Arduinos/Acebotts">
+            <input type = "button" class = "tab-button" id = "batteryBag" value = "Battery Bags">
+            <input type = "button" class = "tab-button" id = "tamiya" value = "Tamiyas">
+            <input type = "button" class = "tab-button" id = "electronicOther" value = "Other"><br><br>
+            <label for = "electronicNote">Notes:</label><br>
+            <input type = "text" class = "note-input" id = "electronicNote" name = "electronicNote"><br><br>
+            <input type = "submit" value = "Submit">
+        </form>
     </div>
 
     <dive id="Accident" class = "tabcontent">
         <h3>Accident</h3>
-        <p>TF witnessed incident involving damage to student and/or lab</p>
+        <!-- NEED TO ADD WHERE INPUT IS BEING STORED -->
+        <!-- <form action="/action_page.php"></form> -->
+        <form accident = "">
+            <input type = "button" class = "tab-button" id = "fire" value = "Fire">
+            <input type = "button" class = "tab-button" id = "injury" value = "Personal Injury">
+            <input type = "button" class = "tab-button" id = "damage" value = "Damage to Lab/Lab Materials">
+            <input type = "button" class = "tab-button" id = "accidentOther" value = "Other"><br><br>
+            <label for = "accidentNote">Notes:</label><br>
+            <input type = "text" class = "note-input" id = "accidentNote" name = "accidentNote"><br><br>
+            <input type = "submit" value = "Submit">
+        </form>
     </div>
 </body>
 
@@ -65,95 +114,3 @@
         evt.currentTarget.className += " active";
     }
 </script>
-
-<!-- Tab example source: https://www.w3schools.com/howto/howto_js_tabs.asp -->
-
-<!-- <body> -->
-    <!-- Tab links -->
-    <!-- <div class="tab">
-        <button class="tablinks" onclick="openCity(event, 'London')">London</button>
-        <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-        <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
-    </div> -->
-
-    <!-- Tab content -->
-    <!-- <div id="London" class="tabcontent">
-        <h3>London</h3>
-        <p>London is the capital city of England.</p>
-    </div>
-
-    <div id="Paris" class="tabcontent">
-        <h3>Paris</h3>
-        <p>Paris is the capital of France.</p>
-    </div>
-
-    <div id="Tokyo" class="tabcontent">
-        <h3>Tokyo</h3>
-        <p>Tokyo is the capital of Japan.</p>
-    </div>
-</body> -->
-
-<!-- <style>
-    /* Style the tab */
-    .tab {
-        overflow: hidden;
-        border: 1px solid #ccc;
-        background-color: #f1f1f1;
-    }
-
-    /* Style the buttons that are used to open the tab content */
-    .tab button {
-        background-color: inherit;
-        float: left;
-        border: none;
-        outline: none;
-        cursor: pointer;
-        padding: 14px 16px;
-        transition: 0.3s;
-    }
-
-    /* Change background color of buttons on hover */
-    .tab button:hover {
-        background-color: #ddd;
-    }
-
-    /* Create an active/current tablink class */
-    .tab button.active {
-        background-color: #ccc;
-    }
-
-    /* Style the tab content */
-    .tabcontent {
-        display: none;
-        padding: 6px 12px;
-        border: 1px solid #ccc;
-        border-top: none;
-    }
-</style> -->
-
-<!-- NOTE from camille: these functions (specifically the second one) do not allow for nested tabs, so 
-    if your finished design has nested tabs you will have to adjust for that. -->
-<!-- <script>
-    function openCity(evt, cityName) {
-        // Declare all variables
-        var i, tabcontent, tablinks;
-
-        // Get all elements with class="tabcontent" and hide them
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-        }
-
-        // Get all elements with class="tablinks" and remove the class "active"
-        tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
-
-        // Show the current tab, and add an "active" class to the button that opened the tab
-        document.getElementById(cityName).style.display = "block";
-        evt.currentTarget.className += " active";
-    } 
-</script> -->
-
-</html>
