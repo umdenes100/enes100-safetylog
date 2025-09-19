@@ -12,7 +12,7 @@
 
 <body>
     <div class = "tab">
-        <button class = "tablinks" onclick = "openCat(event, 'PPE')">PPE Correction</button>
+        <button class = "tablinks" onclick = "openCat(event, 'PPE')" id = "defaultOpen">PPE Correction</button>
         <button class = "tablinks" onclick = "openCat(event, 'Tools')">Tool Correction</button>
         <button class = "tablinks" onclick = "openCat(event, 'Machines')">Machine Correction</button>
         <button class = "tablinks" onclick = "openCat(event, 'Electronics')">Electronics Correction</button>
@@ -46,6 +46,8 @@
 </body>
 
 <script>
+    document.getElementById("defaultOpen").click();
+
     function openCat(evt, catName) {
         var i, tabcontent, tablinks;
 
