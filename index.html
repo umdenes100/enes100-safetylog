@@ -24,12 +24,12 @@
         <!-- NEED TO ADD WHERE INPUT IS BEING STORED -->
         <!-- <form action="/action_page.php"></form> -->
         <form ppe = "">
-            <input type = "button" class = "tab-button" id = "glasses" value = "Safety Glasses">
-            <input type = "button" class = "tab-button" id = "attire" value = "Attire">
-            <input type = "button" class = "tab-button" id = "ppeOther" value = "Other"><br><br>
+            <input type = "button" class = "tab-button" id = "glasses" value = "Safety Glasses" onclick = "toggleButton(id)">
+            <input type = "button" class = "tab-button" id = "attire" value = "Attire" onclick = "toggleButton(id)">
+            <input type = "button" class = "tab-button" id = "ppeOther" value = "Other" onclick = "toggleButton(id)"><br><br>
             <label for = "ppeNote">Notes:</label><br>
-            <input type = "text" class = "note-input" id = "ppeNote" name = "ppeNote"><br><br>
-            <input type = "submit" value = "Submit">
+            <textarea name = "text" class = "note-input" id = "ppeNote" name = "ppeNote" wrap = "soft"></textarea><br><br>
+            <input type = "submit" class = "tab-button" id = "ppeSubmit" value = "Submit" onclick = "toggleButton(id)">
         </form>
     </div>
 
@@ -38,14 +38,14 @@
         <!-- NEED TO ADD WHERE INPUT IS BEING STORED -->
         <!-- <form action="/action_page.php"></form> -->
         <form tool = "">
-            <input type = "button" class = "tab-button" id = "handTool" value = "Hand Tools">
-            <input type = "button" class = "tab-button" id = "powerTool" value = "Power Tools">
-            <input type = "button" class = "tab-button" id = "solder" value = "Soldering">
-            <input type = "button" class = "tab-button" id = "heatGun" value = "Heat Gun">
-            <input type = "button" class = "tab-button" id = "toolOther" value = "Other"><br><br>
+            <input type = "button" class = "tab-button" id = "handTool" value = "Hand Tools" onclick = "toggleButton(id)">
+            <input type = "button" class = "tab-button" id = "powerTool" value = "Power Tools" onclick = "toggleButton(id)">
+            <input type = "button" class = "tab-button" id = "solder" value = "Soldering" onclick = "toggleButton(id)">
+            <input type = "button" class = "tab-button" id = "heatGun" value = "Heat Gun" onclick = "toggleButton(id)">
+            <input type = "button" class = "tab-button" id = "toolOther" value = "Other" onclick = "toggleButton(id)"><br><br>
             <label for = "toolNote">Notes:</label><br>
-            <input type = "text" class = "note-input" id = "toolNote" name = "toolNote"><br><br>
-            <input type = "submit" value = "Submit">
+            <textarea name = "text" class = "note-input" id = "toolNote" name = "toolNote" wrap = "soft"></textarea><br><br>
+            <input type = "submit" class = "tab-button" id = "toolSubmit" value = "Submit" onclick = "toggleButton(id)">
         </form>
     </div>
 
@@ -54,12 +54,12 @@
         <!-- NEED TO ADD WHERE INPUT IS BEING STORED -->
         <!-- <form action="/action_page.php"></form> -->
         <form electronics = "">
-            <input type = "button" class = "tab-button" id = "print3D" value = "3D Printers">
-            <input type = "button" class = "tab-button" id = "laserCut" value = "Laser Cutters">
-            <input type = "button" class = "tab-button" id = "machineOther" value = "Other"><br><br>
+            <input type = "button" class = "tab-button" id = "print3D" value = "3D Printers" onclick = "toggleButton(id)">
+            <input type = "button" class = "tab-button" id = "laserCut" value = "Laser Cutters" onclick = "toggleButton(id)">
+            <input type = "button" class = "tab-button" id = "machineOther" value = "Other" onclick = "toggleButton(id)"><br><br>
             <label for = "machineNote">Notes:</label><br>
-            <input type = "text" class = "note-input" id = "machineNote" name = "machineNote"><br><br>
-            <input type = "submit" value = "Submit">
+            <textarea name = "text" class = "note-input" id = "machineNote" name = "machineNote" wrap = "soft"></textarea><br><br>
+            <input type = "submit" class = "tab-button" id = "machineSubmit" value = "Submit" onclick = "toggleButton(id)">
         </form>
     </div>
 
@@ -68,13 +68,13 @@
         <!-- NEED TO ADD WHERE INPUT IS BEING STORED -->
         <!-- <form action="/action_page.php"></form> -->
         <form machine = "">
-            <input type = "button" class = "tab-button" id = "arduino" value = "Arduinos/Acebotts">
-            <input type = "button" class = "tab-button" id = "batteryBag" value = "Battery Bags">
-            <input type = "button" class = "tab-button" id = "tamiya" value = "Tamiyas">
-            <input type = "button" class = "tab-button" id = "electronicOther" value = "Other"><br><br>
+            <input type = "button" class = "tab-button" id = "arduino" value = "Arduinos/Acebotts" onclick = "toggleButton(id)">
+            <input type = "button" class = "tab-button" id = "batteryBag" value = "Battery Bags" onclick = "toggleButton(id)">
+            <input type = "button" class = "tab-button" id = "tamiya" value = "Tamiyas" onclick = "toggleButton(id)">
+            <input type = "button" class = "tab-button" id = "electronicOther" value = "Other" onclick = "toggleButton(id)"><br><br>
             <label for = "electronicNote">Notes:</label><br>
-            <input type = "text" class = "note-input" id = "electronicNote" name = "electronicNote"><br><br>
-            <input type = "submit" value = "Submit">
+            <textarea name = "text" class = "note-input" id = "electronicNote" name = "electronicNote" wrap = "soft"></textarea><br><br>
+            <input type = "submit" class = "tab-button" id = "electronicSubmit" value = "Submit" onclick = "toggleButton(id)">
         </form>
     </div>
 
@@ -83,19 +83,20 @@
         <!-- NEED TO ADD WHERE INPUT IS BEING STORED -->
         <!-- <form action="/action_page.php"></form> -->
         <form accident = "">
-            <input type = "button" class = "tab-button" id = "fire" value = "Fire">
-            <input type = "button" class = "tab-button" id = "injury" value = "Personal Injury">
-            <input type = "button" class = "tab-button" id = "damage" value = "Damage to Lab/Lab Materials">
-            <input type = "button" class = "tab-button" id = "accidentOther" value = "Other"><br><br>
+            <input type = "button" class = "tab-button" id = "fire" value = "Fire" onclick = "toggleButton(id)">
+            <input type = "button" class = "tab-button" id = "injury" value = "Personal Injury" onclick = "toggleButton(id)">
+            <input type = "button" class = "tab-button" id = "damage" value = "Damage to Lab/Lab Materials" onclick = "toggleButton(id)">
+            <input type = "button" class = "tab-button" id = "accidentOther" value = "Other" onclick = "toggleButton(id)"><br><br>
             <label for = "accidentNote">Notes:</label><br>
-            <input type = "text" class = "note-input" id = "accidentNote" name = "accidentNote"><br><br>
-            <input type = "submit" value = "Submit">
+            <textarea name = "text" class = "note-input" id = "accidentNote" name = "accidentNote" wrap = "soft"></textarea><br><br>
+            <input type = "submit" class = "tab-button" id = "accidentSubmit" value = "Submit" onclick = "toggleButton(id)">
         </form>
     </div>
 </body>
 
 <script>
     document.getElementById("defaultOpen").click();
+    document.getElementByClassName("tab-button-active").toggle("tab-button-active");
 
     function openCat(evt, catName) {
         var i, tabcontent, tablinks;
@@ -112,5 +113,17 @@
 
         document.getElementById(catName).style.display = "block";
         evt.currentTarget.className += " active";
+    }
+
+    function toggleButton(butID) {
+        var button = document.getElementById(butID);
+        button.classList.toggle("tab-button-active");
+
+        tabButtons = document.getElementsByClassName("tab-button");
+        for (i = 0; i < tabButtons.length; i++) {
+            if (tabButtons[i].id != butID){
+                tabButtons[i].className = "tab-button";
+            }
+        }
     }
 </script>

@@ -63,11 +63,27 @@ body {
     font: inherit;
 }
 
+.tab-button-active {
+    background-color: #e21833;
+    border: inherit;
+    border-radius: 2px;
+    color: white;
+}
+
 .note-input {
-    width: 800px;
-    height: 150px;
-    padding-top: 5px;
-    line-height: normal;
+    /* 
+    line-height: normal; */
+    width: 97%;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font: inherit;
+    color: black;
+    background-color: white;
+    outline: none;
+    overflow-wrap: break-word;
 }
 
 h1 {
