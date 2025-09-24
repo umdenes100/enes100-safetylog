@@ -20,83 +20,102 @@
     </div>
     
     <div id="PPE" class = "tabcontent">
-        <h3>PPE</h3>
+        <h2>PPE</h2>
         <!-- NEED TO ADD WHERE INPUT IS BEING STORED -->
         <!-- <form action="/action_page.php"></form> -->
         <form ppe = "">
-            <input type = "button" class = "tab-button" id = "glasses" value = "Safety Glasses" onclick = "toggleButton(id)">
-            <input type = "button" class = "tab-button" id = "attire" value = "Attire" onclick = "toggleButton(id)">
-            <input type = "button" class = "tab-button" id = "ppeOther" value = "Other" onclick = "toggleButton(id)"><br><br>
-            <label for = "ppeNote">Notes:</label><br>
-            <textarea name = "text" class = "note-input" id = "ppeNote" name = "ppeNote" wrap = "soft"></textarea><br><br>
-            <input type = "submit" class = "tab-button" id = "ppeSubmit" value = "Submit" onclick = "toggleButton(id)">
+            <label>Category</label><br>
+            <input type = "button" class = "tab-button" id = "glasses" name = glasses value = "Safety Glasses" onclick = "toggleButton(id)">
+            <input type = "button" class = "tab-button" id = "attire" name = attire value = "Attire" onclick = "toggleButton(id)">
+            <input type = "button" class = "tab-button" id = "ppeOther" name = ppeOther value = "Other" onclick = "toggleButton(id)"><br><br>
+            <label for = "ppeDate">Date & Time of Correction</label><br>
+            <input type = "date" class = "tab-button" id = "ppeDate" name = "ppeDate">
+            <input type = "time" class = "tab-button" id = "ppeTime" name = "ppeTime"><br><br>
+            <label for = "ppeNote">Notes</label><br>
+            <textarea class = "note-input" id = "ppeNote" name = "ppeNote" wrap = "soft"></textarea><br><br>
+            <input type = "submit" class = "tab-button" id = "ppeSubmit" name = ppeSubmit value = "Submit" onclick = "toggleButton(id)">
         </form>
     </div>
 
     <div id="Tools" class = "tabcontent">
-        <h3>Tools</h3>
+        <h2>Tools</h2>
         <!-- NEED TO ADD WHERE INPUT IS BEING STORED -->
         <!-- <form action="/action_page.php"></form> -->
         <form tool = "">
-            <input type = "button" class = "tab-button" id = "handTool" value = "Hand Tools" onclick = "toggleButton(id)">
-            <input type = "button" class = "tab-button" id = "powerTool" value = "Power Tools" onclick = "toggleButton(id)">
-            <input type = "button" class = "tab-button" id = "solder" value = "Soldering" onclick = "toggleButton(id)">
-            <input type = "button" class = "tab-button" id = "heatGun" value = "Heat Gun" onclick = "toggleButton(id)">
-            <input type = "button" class = "tab-button" id = "toolOther" value = "Other" onclick = "toggleButton(id)"><br><br>
-            <label for = "toolNote">Notes:</label><br>
-            <textarea name = "text" class = "note-input" id = "toolNote" name = "toolNote" wrap = "soft"></textarea><br><br>
-            <input type = "submit" class = "tab-button" id = "toolSubmit" value = "Submit" onclick = "toggleButton(id)">
+            <label>Category</label><br>
+            <input type = "button" class = "tab-button" id = "handTool" name = handTool value = "Hand Tools" onclick = "toggleButton(id)">
+            <input type = "button" class = "tab-button" id = "powerTool" name = powerTool value = "Power Tools" onclick = "toggleButton(id)">
+            <input type = "button" class = "tab-button" id = "solder" name = solder value = "Soldering" onclick = "toggleButton(id)">
+            <input type = "button" class = "tab-button" id = "heatGun" name = heatGun value = "Heat Gun" onclick = "toggleButton(id)">
+            <input type = "button" class = "tab-button" id = "toolOther" name = toolOther value = "Other" onclick = "toggleButton(id)"><br><br>
+            <label for = "toolDate">Date & Time of Correction</label><br>
+            <input type = "date" class = "tab-button" id = "toolDate" name = "toolDate">
+            <input type = "time" class = "tab-button" id = "toolTime" name = "toolTime"><br><br>
+            <label for = "toolNote">Notes</label><br>
+            <textarea class = "note-input" id = "toolNote" name = "toolNote" wrap = "soft"></textarea><br><br>
+            <input type = "submit" class = "tab-button" id = "toolSubmit" name = toolSubmit value = "Submit" onclick = "toggleButton(id)">
         </form>
     </div>
 
     <div id="Machines" class = "tabcontent">
-        <h3>Machines</h3>
+        <h2>Machines</h2>
         <!-- NEED TO ADD WHERE INPUT IS BEING STORED -->
         <!-- <form action="/action_page.php"></form> -->
         <form electronics = "">
-            <input type = "button" class = "tab-button" id = "print3D" value = "3D Printers" onclick = "toggleButton(id)">
-            <input type = "button" class = "tab-button" id = "laserCut" value = "Laser Cutters" onclick = "toggleButton(id)">
-            <input type = "button" class = "tab-button" id = "machineOther" value = "Other" onclick = "toggleButton(id)"><br><br>
-            <label for = "machineNote">Notes:</label><br>
-            <textarea name = "text" class = "note-input" id = "machineNote" name = "machineNote" wrap = "soft"></textarea><br><br>
-            <input type = "submit" class = "tab-button" id = "machineSubmit" value = "Submit" onclick = "toggleButton(id)">
+            <label>Category</label><br>
+            <input type = "button" class = "tab-button" id = "print3D" name = print3D value = "3D Printers" onclick = "toggleButton(id)">
+            <input type = "button" class = "tab-button" id = "laserCut" name = laserCut value = "Laser Cutters" onclick = "toggleButton(id)">
+            <input type = "button" class = "tab-button" id = "machineOther" name = machineOther value = "Other" onclick = "toggleButton(id)"><br><br>
+            <label for = "machineDate">Date & Time of Correction</label><br>
+            <input type = "date" class = "tab-button" id = "machineDate" name = "machineDate">
+            <input type = "time" class = "tab-button" id = "machineTime" name = "machineTime"><br><br>
+            <label for = "machineNote">Notes</label><br>
+            <textarea class = "note-input" id = "machineNote" name = "machineNote" wrap = "soft"></textarea><br><br>
+            <input type = "submit" class = "tab-button" id = "machineSubmit" name = machineSubmit value = "Submit" onclick = "toggleButton(id)">
         </form>
     </div>
 
     <div id="Electronics" class = "tabcontent">
-        <h3>Electronics</h3>
+        <h2>Electronics</h2>
         <!-- NEED TO ADD WHERE INPUT IS BEING STORED -->
         <!-- <form action="/action_page.php"></form> -->
         <form machine = "">
-            <input type = "button" class = "tab-button" id = "arduino" value = "Arduinos/Acebotts" onclick = "toggleButton(id)">
-            <input type = "button" class = "tab-button" id = "batteryBag" value = "Battery Bags" onclick = "toggleButton(id)">
-            <input type = "button" class = "tab-button" id = "tamiya" value = "Tamiyas" onclick = "toggleButton(id)">
-            <input type = "button" class = "tab-button" id = "electronicOther" value = "Other" onclick = "toggleButton(id)"><br><br>
-            <label for = "electronicNote">Notes:</label><br>
-            <textarea name = "text" class = "note-input" id = "electronicNote" name = "electronicNote" wrap = "soft"></textarea><br><br>
-            <input type = "submit" class = "tab-button" id = "electronicSubmit" value = "Submit" onclick = "toggleButton(id)">
+            <label>Category</label><br>
+            <input type = "button" class = "tab-button" id = "arduino" name = arduino value = "Arduinos/Acebotts" onclick = "toggleButton(id)">
+            <input type = "button" class = "tab-button" id = "batteryBag" name = batteryBag value = "Battery Bags" onclick = "toggleButton(id)">
+            <input type = "button" class = "tab-button" id = "tamiya" name = tamiya value = "Tamiyas" onclick = "toggleButton(id)">
+            <input type = "button" class = "tab-button" id = "electronicOther" name = electronicOther value = "Other" onclick = "toggleButton(id)"><br><br>
+            <label for = "electronicDate">Date & Time of Correction</label><br>
+            <input type = "date" class = "tab-button" id = "electronicDate" name = "electronicDate">
+            <input type = "time" class = "tab-button" id = "electronicTime" name = "electronicTime"><br><br>
+            <label for = "electronicNote">Notes</label><br>
+            <textarea class = "note-input" id = "electronicNote" name = "electronicNote" wrap = "soft"></textarea><br><br>
+            <input type = "submit" class = "tab-button" id = "electronicSubmit" name = electronicSubmit value = "Submit" onclick = "toggleButton(id)">
         </form>
     </div>
 
     <dive id="Accident" class = "tabcontent">
-        <h3>Accident</h3>
+        <h2>Accident</h2>
         <!-- NEED TO ADD WHERE INPUT IS BEING STORED -->
         <!-- <form action="/action_page.php"></form> -->
         <form accident = "">
-            <input type = "button" class = "tab-button" id = "fire" value = "Fire" onclick = "toggleButton(id)">
-            <input type = "button" class = "tab-button" id = "injury" value = "Personal Injury" onclick = "toggleButton(id)">
-            <input type = "button" class = "tab-button" id = "damage" value = "Damage to Lab/Lab Materials" onclick = "toggleButton(id)">
-            <input type = "button" class = "tab-button" id = "accidentOther" value = "Other" onclick = "toggleButton(id)"><br><br>
-            <label for = "accidentNote">Notes:</label><br>
-            <textarea name = "text" class = "note-input" id = "accidentNote" name = "accidentNote" wrap = "soft"></textarea><br><br>
-            <input type = "submit" class = "tab-button" id = "accidentSubmit" value = "Submit" onclick = "toggleButton(id)">
+            <label>Category</label><br>
+            <input type = "button" class = "tab-button" id = "fire" name = fire value = "Fire" onclick = "toggleButton(id)">
+            <input type = "button" class = "tab-button" id = "injury" name = injury value = "Personal Injury" onclick = "toggleButton(id)">
+            <input type = "button" class = "tab-button" id = "damage" name = damage value = "Damage to Lab/Lab Materials" onclick = "toggleButton(id)">
+            <input type = "button" class = "tab-button" id = "accidentOther" name = accidentOther value = "Other" onclick = "toggleButton(id)"><br><br>
+            <label for = "accidentDate">Date & Time of Correction</label><br>
+            <input type = "date" class = "tab-button" id = "accidentDate" name = "accidentDate">
+            <input type = "time" class = "tab-button" id = "accidentTime" name = "accidentTime"><br><br>
+            <label for = "accidentNote">Notes</label><br>
+            <textarea class = "note-input" id = "accidentNote" name = "accidentNote" wrap = "soft"></textarea><br><br>
+            <input type = "submit" class = "tab-button" id = "accidentSubmit" name = accidentSubmit value = "Submit" onclick = "toggleButton(id)">
         </form>
     </div>
 </body>
 
 <script>
     document.getElementById("defaultOpen").click();
-    document.getElementByClassName("tab-button-active").toggle("tab-button-active");
 
     function openCat(evt, catName) {
         var i, tabcontent, tablinks;

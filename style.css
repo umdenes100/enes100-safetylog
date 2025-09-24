@@ -71,8 +71,6 @@ body {
 }
 
 .note-input {
-    /* 
-    line-height: normal; */
     width: 97%;
     height: 100px;
     padding: 10px;
@@ -91,6 +89,13 @@ h1 {
     font-size: 80px;
     margin: 0px;
     margin-bottom: 1%;
+}
+
+h2 {
+    width: 97%;
+    background-color: #121B21;
+    border: 1.5vh solid #121B21;
+    border-radius: 5px;
 }
 
 .text {
