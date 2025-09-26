@@ -12,7 +12,7 @@
     <script type="module" src="./src/firebase-init.js"></script>
 
     <script type="module" defer src="./src/main.js"></script>
-    <link rel="stylesheet" href="/enes100-safetylog/style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
@@ -131,12 +131,14 @@
 
     function toggleButton(butID) {
         var button = document.getElementById(butID);
-        button.classList.toggle("tab-button-active");
+        if (!button.name.endsWith("Submit")) {
+            button.classList.toggle("tab-button-active");
 
-        tabButtons = document.getElementsByClassName("tab-button");
-        for (i = 0; i < tabButtons.length; i++) {
-            if (tabButtons[i].id != butID){
-                tabButtons[i].className = "tab-button";
+            tabButtons = document.getElementsByClassName("tab-button");
+            for (i = 0; i < tabButtons.length; i++) {
+                if (tabButtons[i].id != butID){
+                    tabButtons[i].className = "tab-button";
+                }
             }
         }
     }

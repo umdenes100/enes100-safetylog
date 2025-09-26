@@ -2,20 +2,20 @@
     font-family: 'Interstate';
     font-weight: normal;
     font-style: normal;
-    src: local('Interstate'), url("/enes100-safetylog/public/Interstate-Regular.otf") format('opentype');
+    src: local('Interstate'), url("./public/Interstate-Regular.otf") format('opentype');
 }
 
 @font-face {
     font-family: 'Interstate';
     font-weight: normal;
     font-style: normal;
-    src: local('Interstate'), url("/enes100-safetylog/public/Interstate-Regular.otf") format('opentype');
+    src: local('Interstate'), url("./public/Interstate-Regular.otf") format('opentype');
 }
 
 body {
     padding: 0;
     margin: 0;
-    background-image: url("/enes100-safetylog/public/img/shell overlay repeating.svg");
+    background-image: url("./public/img/shell overlay repeating.svg");
     background-repeat: repeat;
     height: 96vh;
     background-size: 50%;

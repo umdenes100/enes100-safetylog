@@ -1,5 +1,5 @@
 // src/main.js
-import { database, ref, push } from './firebase-init.js'; // Corrected import path
+import { database, ref, push, set } from './firebase-init.js'; // Corrected import path
 
 document.addEventListener('DOMContentLoaded', () => {
     const ppeForm = document.getElementById('ppeForm');
@@ -146,6 +146,3 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
-
-// Export both the app and database instances for use in other files
-export { app, database };
