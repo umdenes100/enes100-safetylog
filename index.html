@@ -5,9 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tool Check</title>
+    <title>Safety Log</title>
+
+    <!-- Import your Firebase initialization module here -->
+    <!-- This ensures Firebase is initialized before main.js tries to use it -->
+    <script type="module" src="./src/firebase-init.js"></script>
+
     <script type="module" defer src="./src/main.js"></script>
-    <link rel="stylesheet" href="/enes100-safetylog/style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
@@ -21,9 +26,7 @@
     
     <div id="PPE" class = "tabcontent">
         <h2>PPE</h2>
-        <!-- NEED TO ADD WHERE INPUT IS BEING STORED -->
-        <!-- <form action="/action_page.php"></form> -->
-        <form ppe = "">
+        <form id = "ppeForm">
             <label>Category</label><br>
             <input type = "button" class = "tab-button" id = "glasses" name = glasses value = "Safety Glasses" onclick = "toggleButton(id)">
             <input type = "button" class = "tab-button" id = "attire" name = attire value = "Attire" onclick = "toggleButton(id)">
@@ -39,9 +42,7 @@
 
     <div id="Tools" class = "tabcontent">
         <h2>Tools</h2>
-        <!-- NEED TO ADD WHERE INPUT IS BEING STORED -->
-        <!-- <form action="/action_page.php"></form> -->
-        <form tool = "">
+        <form id = "toolForm">
             <label>Category</label><br>
             <input type = "button" class = "tab-button" id = "handTool" name = handTool value = "Hand Tools" onclick = "toggleButton(id)">
             <input type = "button" class = "tab-button" id = "powerTool" name = powerTool value = "Power Tools" onclick = "toggleButton(id)">
@@ -59,9 +60,7 @@
 
     <div id="Machines" class = "tabcontent">
         <h2>Machines</h2>
-        <!-- NEED TO ADD WHERE INPUT IS BEING STORED -->
-        <!-- <form action="/action_page.php"></form> -->
-        <form electronics = "">
+        <form id = "machineForm">
             <label>Category</label><br>
             <input type = "button" class = "tab-button" id = "print3D" name = print3D value = "3D Printers" onclick = "toggleButton(id)">
             <input type = "button" class = "tab-button" id = "laserCut" name = laserCut value = "Laser Cutters" onclick = "toggleButton(id)">
@@ -77,9 +76,7 @@
 
     <div id="Electronics" class = "tabcontent">
         <h2>Electronics</h2>
-        <!-- NEED TO ADD WHERE INPUT IS BEING STORED -->
-        <!-- <form action="/action_page.php"></form> -->
-        <form machine = "">
+        <form id = "electronicsForm">
             <label>Category</label><br>
             <input type = "button" class = "tab-button" id = "arduino" name = arduino value = "Arduinos/Acebotts" onclick = "toggleButton(id)">
             <input type = "button" class = "tab-button" id = "batteryBag" name = batteryBag value = "Battery Bags" onclick = "toggleButton(id)">
@@ -96,9 +93,7 @@
 
     <dive id="Accident" class = "tabcontent">
         <h2>Accident</h2>
-        <!-- NEED TO ADD WHERE INPUT IS BEING STORED -->
-        <!-- <form action="/action_page.php"></form> -->
-        <form accident = "">
+        <form id = "accidentForm">
             <label>Category</label><br>
             <input type = "button" class = "tab-button" id = "fire" name = fire value = "Fire" onclick = "toggleButton(id)">
             <input type = "button" class = "tab-button" id = "injury" name = injury value = "Personal Injury" onclick = "toggleButton(id)">
@@ -136,13 +131,16 @@
 
     function toggleButton(butID) {
         var button = document.getElementById(butID);
-        button.classList.toggle("tab-button-active");
+        if (!button.name.endsWith("Submit")) {
+            button.classList.toggle("tab-button-active");
 
-        tabButtons = document.getElementsByClassName("tab-button");
-        for (i = 0; i < tabButtons.length; i++) {
-            if (tabButtons[i].id != butID){
-                tabButtons[i].className = "tab-button";
+            tabButtons = document.getElementsByClassName("tab-button");
+            for (i = 0; i < tabButtons.length; i++) {
+                if (tabButtons[i].id != butID){
+                    tabButtons[i].className = "tab-button";
+                }
             }
         }
     }
 </script>
+</html>
