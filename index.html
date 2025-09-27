@@ -131,9 +131,9 @@
 
     function toggleButton(butID) {
         var button = document.getElementById(butID);
-        if (!button.name.endsWith("Submit")) {
-            button.classList.toggle("tab-button-active");
+        button.classList.toggle("tab-button-active");
 
+        if (!button.name.endsWith("Submit")) {
             tabButtons = document.getElementsByClassName("tab-button");
             for (i = 0; i < tabButtons.length; i++) {
                 if (tabButtons[i].id != butID){

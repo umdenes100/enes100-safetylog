@@ -5,13 +5,6 @@
     src: local('Interstate'), url("./Interstate-Regular.otf") format('opentype');
 }
 
-@font-face {
-    font-family: 'Interstate';
-    font-weight: normal;
-    font-style: normal;
-    src: local('Interstate'), url("./Interstate-Regular.otf") format('opentype');
-}
-
 body {
     padding: 0;
     margin: 0;
@@ -87,13 +80,6 @@ h1 {
     font-size: 80px;
     margin: 0px;
     margin-bottom: 1%;
-}
-
-h2 {
-    width: 97%;
-    background-color: #121B21;
-    border: 1.5vh solid #121B21;
-    border-radius: 5px;
 }
 
 h2 {
