@@ -137,11 +137,13 @@
     function toggleButton(butID) {
         var button = document.getElementById(butID);
         button.classList.toggle("tab-button-active");
-
-        tabButtons = document.getElementsByClassName("tab-button");
-        for (i = 0; i < tabButtons.length; i++) {
-            if (tabButtons[i].id != butID){
-                tabButtons[i].className = "tab-button";
+        
+        if (!button.name.endsWith("Submit")) {
+            tabButtons = document.getElementsByClassName("tab-button");
+            for (i = 0; i < tabButtons.length; i++) {
+                if (tabButtons[i].id != butID){
+                    tabButtons[i].className = "tab-button";
+                }
             }
         }
     }
