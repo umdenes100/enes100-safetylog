@@ -2,13 +2,20 @@
     font-family: 'Interstate';
     font-weight: normal;
     font-style: normal;
-    src: local('Interstate'), url("./Interstate-Regular.otf") format('opentype');
+    src: local('Interstate'), url("/Interstate-Regular.otf") format('opentype');
+}
+
+@font-face {
+    font-family: 'Interstate';
+    font-style: normal;
+    font-weight: bold;
+    src: local('Interstate'), url("/Interstate-Bold.otf") format('opentype');
 }
 
 body {
     padding: 0;
     margin: 0;
-    background-image: url("./img/shell overlay repeating.svg");
+    background-image: url("/img/shell overlay repeating.svg");
     background-repeat: repeat;
     height: 96vh;
     background-size: 50%;
@@ -48,7 +55,15 @@ body {
 }
 
 .tab-button {
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border: 1px solid transparent;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border-bottom-color: #abc;
     font: inherit;
+    font-size: smaller;
+    color: black;
 }
 
 .tab-button-active {
