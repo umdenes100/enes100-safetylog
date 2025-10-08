@@ -4,14 +4,14 @@ import { getDatabase, ref, set, push, child, get, runTransaction } from "firebas
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyBkYIwQSF4iDpLn7DNzf1_yrcbeRMib_2w",
-    authDomain: "enes100-safety-log-test.firebaseapp.com",
-    databaseURL: "https://enes100-safety-log-test-default-rtdb.firebaseio.com",
-    projectId: "enes100-safety-log-test",
-    storageBucket: "enes100-safety-log-test.firebasestorage.app",
-    messagingSenderId: "28227395667",
-    appId: "1:28227395667:web:a85674b512e27068de26a6"
-};
+    apiKey: "AIzaSyBvyL7Mi3OVMN4fnZU-_5S6_-tQ_W5ivM0",
+    authDomain: "engr-enes100tool-inv-firebase.firebaseapp.com",
+    databaseURL: "https://engr-enes100tool-inv-firebase-safety-log.firebaseio.com",
+    projectId: "engr-enes100tool-inv-firebase",
+    storageBucket: "engr-enes100tool-inv-firebase.appspot.com",
+    messagingSenderId: "763916402491",
+    appId: "1:763916402491:web:4a62dfad59d68b95aa811e"
+  };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
