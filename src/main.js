@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const dataToSave = collectFormData('ppeForm');
             // Push data to a 'ppeCorrections' node in your Realtime Database
             const ppeRef = ref(database, 'ppeCorrections');
-            await set(push(ppeRef), dataToSave); // Corrected: push returns a ref, set writes data to that ref
+            await set(push(ppeRef), dataToSave);
             console.log('PPE Correction Data Saved Successfully!');
             alert('PPE Correction Submitted!');
             ppeForm.reset(); // Clear the form after submission
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             const dataToSave = collectFormData('toolForm');
             const toolRef = ref(database, 'toolCorrections');
-            await set(push(toolRef), dataToSave); // Corrected: push returns a ref, set writes data to that ref
+            await set(push(toolRef), dataToSave);
             console.log('Tool Correction Data Saved Successfully!');
             alert('Tool Correction Submitted!');
             toolForm.reset();
@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             const dataToSave = collectFormData('machineForm');
             const machineRef = ref(database, 'machineCorrections');
-            await set(push(machineRef), dataToSave); // Corrected: push returns a ref, set writes data to that ref
+            await set(push(machineRef), dataToSave);
             console.log('Machine Correction Data Saved Successfully!');
             alert('Machine Correction Submitted!');
             machineForm.reset();
@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             const dataToSave = collectFormData('electronicsForm');
             const electronicsRef = ref(database, 'electronicsCorrections');
-            await set(push(electronicsRef), dataToSave); // Corrected: push returns a ref, set writes data to that ref
+            await set(push(electronicsRef), dataToSave);
             console.log('Electronics Correction Data Saved Successfully!');
             alert('Electronics Correction Submitted!');
             electronicsForm.reset();
@@ -131,7 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             const dataToSave = collectFormData('accidentForm');
             const accidentRef = ref(database, 'accident');
-            await set(push(accidentRef), dataToSave); // Corrected: push returns a ref, set writes data to that ref
+            await set(push(accidentRef), dataToSave);
             console.log('Accident Data Saved Successfully!');
             alert('Accident Submitted!');
             accidentForm.reset();
